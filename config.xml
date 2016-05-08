@@ -6,7 +6,7 @@
         id        = "au.com.birdstudios.qrcheckin"
         version   = "1.0.3">
 
-    <name>QR Sign In</name>
+    <name>QR Check In</name>
 
     <description>
         Application to perform event sign in using QR codes.
