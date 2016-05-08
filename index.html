@@ -108,7 +108,7 @@
 
       <fieldset>
         <div class="control-group">
-          <label class="control-label" for="endpoint">Check In Endpoint *</label>
+          <label class="control-label" for="endpoint">Sign In Endpoint *</label>
           <div class="controls">
             <input name="endpoint" id="textinput2" placeholder="e.g. http://mysite.com" class="required input-xxlarge" data-bind="value: endpoint" type="url" />
             <p class="help-block">The remote service endpoint to connect to.</p>
@@ -119,7 +119,7 @@
           <label class="control-label" for="apiKey">API Key *</label>
           <div class="controls">
             <input name="apiKey" id="textinput3" placeholder="e.g. gsSF67sdx" class="required input-xxlarge" data-bind="value: apiKey" type="text" />
-            <p class="help-block">The remote service API Key.</p>
+            <p class="help-block">The remote service Key.</p>
           </div>
         </div>      
       </fieldset>
@@ -177,7 +177,7 @@
                 <div class="controls">
                   <select class="input-xxlarge" data-bind="options: $root.qrCheckInServices.eventList, optionsCaption: 'Select an event...', value: selectedEvent">
                   </select>
-                  <p class="help-block">The event to check in tickets for.</p>
+                  <p class="help-block">The event to sign in to.</p>
                 </div>
               </div>
             </fieldset>
@@ -227,11 +227,11 @@
           <div class="event-statistics-bar">
             <div class="event-statistics-bar-inner">
               <div class="statistic">
-                Check Ins<br/>
+                Signed In<br/>
                 <span data-bind="text: number_of_checkins"></span>
               </div>
               <div class="statistic">
-                Failed Check Ins<br/>
+                Failed Sign Ins<br/>
                 <span data-bind="text: number_of_failed_checkins"></span>
               </div>
 <!-- ko if: $root.qrCheckInServices.allowPassInOut() -->
@@ -418,11 +418,11 @@
               <tr>
                 <td colspan="2" class="tickets-container">
 
-                    <h4>Tickets</h4>
+                    <h4>Members</h4>
         <!-- ko foreach: tickets -->
                       <div class="ticket-panel">
                         <strong><span class="entypo">&#127915;</span> <span data-bind="text: summary"></span></strong><br>
-                        <span> Checked In:</span>
+                        <span> Signed In:</span>
                         <span class="check-in-out-label" data-bind="css: { active: (!checked_in()) }, click: function() { $root.searchPageViewModel.checkOutTicket($data); }">No</span>
                         <span class="check-in-out-label" data-bind="css: { active: (checked_in()) }, click: function() { $root.searchPageViewModel.checkInTicket($data); }">Yes</span>
 
