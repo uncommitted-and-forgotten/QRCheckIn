@@ -52,7 +52,7 @@
 
 
     <!-- Plugins can also be added here. -->
-    <plugin name="ng-phonegap-plugin-barcodescanner" source="npm" /> <!-- latest release -->
+    <plugin name="phonegap-plugin-barcodescanner" source="npm" /> <!-- latest release -->
 
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
