@@ -46,7 +46,7 @@ function SearchPageViewModel(settingsVM, qrServer) {
       return;
     }
 
-    self.server.progressMessage("Searching for Tickets...");
+    self.server.progressMessage("Searching for Member...");
     self.lastCheckInResultModel.haveResult(false);
     self.server.isMakingRequest(true);
 
