@@ -51,8 +51,7 @@ function SearchPageViewModel(settingsVM, qrServer) {
     self.server.isMakingRequest(true);
 
 	  url = self.settingsPageViewModel.endpoint() + "/qr_check_in/search/" + 
-	    self.settingsPageViewModel.apiKey() + "/" + 
-	    encodeURIComponent(self.settingsPageViewModel.selectedEvent()) + "/" + encodeURIComponent(self.name());
+	    self.settingsPageViewModel.apiKey() + "/" + encodeURIComponent(self.name());
 
     $.ajax({
       type: 'GET',
