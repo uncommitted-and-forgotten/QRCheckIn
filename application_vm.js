@@ -41,7 +41,7 @@ function ApplicationViewModel() {
   }
 
   this.setSearchMode = function() {
-    if (!this.settingsPageViewModel.validateHasEvent() || this.qrCheckInServices.isMakingRequest()) {
+    if (this.qrCheckInServices.isMakingRequest()) {
       return false;
     }
     this.mode("search");
