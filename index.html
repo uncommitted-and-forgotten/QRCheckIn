@@ -402,8 +402,7 @@
             <tbody data-bind="foreach: results().matches">
               <tr>
                 <td>
-                  <span data-bind="text: name"></span><br/>
-                  <span data-bind="text: address"></span>
+                  <span data-bind="text: matches"></span><br/>
                 </td>
                 <td class="expand-contract-btn-container">
                   <span data-bind="if: !isExpanded()">
@@ -419,15 +418,15 @@
                 <td colspan="2" class="tickets-container">
 
                     <h4>Members</h4>
-        <!-- ko foreach: tickets -->
-                      <div class="ticket-panel">
-                        <strong><span class="entypo">&#127915;</span> <span data-bind="text: summary"></span></strong><br>
-                        <span> Signed In:</span>
-                        <span class="check-in-out-label" data-bind="css: { active: (!checked_in()) }, click: function() { $root.searchPageViewModel.checkOutTicket($data); }">No</span>
-                        <span class="check-in-out-label" data-bind="css: { active: (checked_in()) }, click: function() { $root.searchPageViewModel.checkInTicket($data); }">Yes</span>
+        <!-- <!-- ko foreach: tickets --> -->
+                      <!-- <div class="ticket-panel"> -->
+                        <!-- <strong><span class="entypo">&#127915;</span> <span data-bind="text: summary"></span></strong><br> -->
+                        <!-- <span> Signed In:</span> -->
+                        <!-- <span class="check-in-out-label" data-bind="css: { active: (!checked_in()) }, click: function() { $root.searchPageViewModel.checkOutTicket($data); }">No</span> -->
+                        <!-- <span class="check-in-out-label" data-bind="css: { active: (checked_in()) }, click: function() { $root.searchPageViewModel.checkInTicket($data); }">Yes</span> -->
 
-                      </div>
-        <!-- /ko -->
+                      <!-- </div> -->
+        <!-- <!-- /ko --> -->
                 </td>
               </tr>
               <!-- /ko -->
