@@ -386,8 +386,8 @@
   <div class="container">
     <div class="row">
       <div class="span12">
-        <div data-bind="if: results">
-          <div class="no-results" data-bind="if: results().matches().length == 0">
+        <div data-bind="if: result">
+          <div class="no-results" data-bind="if: result().matches().length == 0">
             <div class="well">
               <div>
                 <span class="entypo">&#128078;</span>
@@ -402,9 +402,8 @@
             <tbody>
               <tr>
                 <td>
-                  <!-- <span data-bind="text: matches"></span><br/> -->
-				  TESTING - currently not functional
-                </td>
+                  <span data-bind="text: matches"></span><br/>
+               </td>
                 <td class="expand-contract-btn-container">
                   <span data-bind="if: !isExpanded()">
                     <span class="entypo search-result-expand-btn" data-bind="click: expand">&#59230;</span>
