@@ -149,6 +149,7 @@ header.masthead
 
 .page-header
 {
+  padding-top: 5px;
   padding-bottom: 0;
   margin: 5px 0 10px 0;
   border-bottom: 1px solid #ddd;  
