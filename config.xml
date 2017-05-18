@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.wolverinehog.signin"
-        version   = "1.0.5">
+        version   = "1.0.6">
 
     <name>QR Sign In</name>
 
@@ -54,9 +54,9 @@
     <!-- Plugins can also be added here. -->
     <plugin name="cordova-plugin-barcodescanner" /> <!-- latest release -->
     <variable name="CAMERA_USAGE_DESCRIPTION" value="Scan bar codes" />
-<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
-   <string>We are using the Camera for scanning bar codes</string>
-</gap:config-file>
+	<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
+	   <string>We are using the Camera for scanning bar codes</string>
+	</gap:config-file>
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
