@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.wolverinehog.signin"
-        version   = "1.0.6">
+        version   = "1.0.7">
 
     <name>QR Sign In</name>
 
@@ -32,9 +32,11 @@
 
     <!-- Customize your app and platform with the preference element. -->
     <preference name="phonegap-version"           value="3.5.0" />          <!-- all: current version of PhoneGap -->
-    <preference name="orientation"                value="default" />        <!-- all: default means both landscape and portrait are enabled -->
+    <preference name="orientation"                value="portait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
+    <preference name="showTorchButton"		  Value="true" />	     <!-- iOS and Android -->
+    <preference name="torchOn"			  Value="true" />	     <!-- iOS and Android -->
     <preference name="webviewbounce"              value="false" />           <!-- ios: control whether the screen 'bounces' when scrolled beyond the top -->
     <preference name="prerendered-icon"           value="true" />           <!-- ios: if icon is prerendered, iOS will not apply it's gloss to the app's icon on the user's home screen -->
     <preference name="stay-in-webview"            value="false" />          <!-- ios: external links should open in the default browser, 'true' would use the webview the app lives in -->
@@ -52,7 +54,7 @@
 
 
     <!-- Plugins can also be added here. -->
-    <plugin name="cordova-plugin-barcodescanner" /> <!-- latest release -->
+    <plugin name="phonegap-plugin-barcodescanner" /> <!-- latest release -->
     <variable name="CAMERA_USAGE_DESCRIPTION" value="Scan bar codes" />
 	<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
 	   <string>We are using the Camera for scanning bar codes</string>
