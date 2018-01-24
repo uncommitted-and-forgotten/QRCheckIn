@@ -57,11 +57,6 @@
 	<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
 	   <string>We are using the Camera for scanning bar codes</string>
 	</gap:config-file>
-<config-file target="AndroidManifest.xml" parent="/*" mode="merge">
-    <uses-permission android:name="android.permission.CAMERA" />
-    <uses-feature android:name="android.hardware.camera" />
-    <uses-feature android:name="android.hardware.camera.autofocus" />
-</config-file>
 	
     <!-- Define app icon for each platform. -->
     <icon src="icon.png" />
