@@ -58,10 +58,10 @@
 	   <string>We are using the Camera for scanning bar codes</string>
 	</gap:config-file>
     <platform name="android">
-	<config-file target="AndroidManifest.xml" parent="/*" mode="merge">
-  	  <uses-permission android:name="android.permission.CAMERA" xmlns:android="http://schemas.android.com/apk/res/android" />
-  	  <uses-feature android:name="android.hardware.camera" xmlns:android="http://schemas.android.com/apk/res/android" />
-  	  <uses-feature android:name="android.hardware.camera.autofocus" xmlns:android="http://schemas.android.com/apk/res/android" />
+	<config-file target="AndroidManifest.xml" parent="/*" mode="merge" xmlns:android="http://schemas.android.com/apk/res/android">
+  	  <uses-permission android:name="android.permission.CAMERA" />
+  	  <uses-feature android:name="android.hardware.camera" />
+  	  <uses-feature android:name="android.hardware.camera.autofocus" />
 	</config-file>
     </platform>
 	
