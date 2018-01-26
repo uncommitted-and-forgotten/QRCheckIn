@@ -52,7 +52,7 @@
 
 
     <!-- Plugins can also be added here. -->
-    <plugin name="phonegap-plugin-barcodescanner" /> <!-- latest release -->
+    <plugin name="cordova-plugin-cszbar" /> <!-- latest release -->
     <variable name="CAMERA_USAGE_DESCRIPTION" value="Scan bar codes" />
 	<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
 	   <string>We are using the Camera for scanning bar codes</string>
