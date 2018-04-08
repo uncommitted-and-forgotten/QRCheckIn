@@ -31,7 +31,7 @@
     <preference name="android-build-tool" value="gradle" />
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-8.0.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"           value="cli-7.0.1" />          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
@@ -68,8 +68,6 @@
 	
     <!-- Define app icon and splash screens for each platform. -->
 <platform name="android">
-    <icon src="res/icons/android/drawable-shopper_icon.png" />
-    <icon src="res/icons/android/drawable-share_via_barcode.png" />
 	<icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
 	<icon density="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
 	<icon density="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
