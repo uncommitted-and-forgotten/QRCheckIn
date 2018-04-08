@@ -68,7 +68,8 @@
 	
     <!-- Define app icon and splash screens for each platform. -->
 <platform name="android">
-    <icon src="res/icons/android/icon.png" />
+    <icon src="res/icons/android/shopper_icon.png" />
+    <icon src="res/icons/android/share_via_barcode.png" />
 	<icon density="ldpi" src="res/icons/android/drawable-ldpi-icon.png" />
 	<icon density="mdpi" src="res/icons/android/drawable-mdpi-icon.png" />
 	<icon density="hdpi" src="res/icons/android/drawable-hdpi-icon.png" />
