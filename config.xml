@@ -4,7 +4,7 @@
 <widget xmlns     = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.wolverinehog.signin"
-        version   = "1.0.8">
+        version   = "1.0.9">
 
     <name>Event Check In</name>
 
@@ -31,7 +31,7 @@
      <preference name="android-build-tool" value="gradle" />
 
     <!-- Customize your app and platform with the preference element. -->
-    <preference name="phonegap-version"           value="cli-8.0.0" />          <!-- all: current version of PhoneGap -->
+    <preference name="phonegap-version"  value="cli-8.1.1" />	          <!-- all: current version of PhoneGap -->
     <preference name="orientation"                value="portrait" />        <!-- all: default means both landscape and portrait are enabled -->
     <preference name="target-device"              value="universal" />      <!-- all: possible values handset, tablet, or universal -->
     <preference name="fullscreen"                 value="false" />           <!-- all: hides the status bar at the top of the screen -->
@@ -54,7 +54,8 @@
 
 
     <!-- Plugins can also be added here. -->
-    <plugin name="phonegap-plugin-barcodescanner" spec="6.0.8"/> <!-- latest release -->
+    <!--plugin name="phonegap-plugin-barcodescanner" spec="6.0.8"/--> <!-- latest release -->
+        <plugin name="phonegap-plugin-barcodescanner"/>
     <variable name="CAMERA_USAGE_DESCRIPTION" value="Scan bar codes" />
 	<gap:config-file platform="ios" parent="NSCameraUsageDescription" overwrite="true">
 	   <string>We are using the Camera for scanning bar codes</string>
